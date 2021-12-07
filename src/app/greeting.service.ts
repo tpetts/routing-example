@@ -6,4 +6,11 @@ import { Injectable } from '@angular/core';
 export class GreetingService {
 
   constructor() { }
+
+  get greeting() {
+    return `Hello ${this.who}`;
+  }
+
+  who = "";
+  
 }
